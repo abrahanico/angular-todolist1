@@ -1,0 +1,85 @@
+/* todo-list.component.css */
+
+.row {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .task {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .task p {
+    margin: 0;
+  }
+  
+  .task:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .add-task {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .add-task input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-task button {
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-task button:hover {
+    background-color: #0056b3;
+  }
+  
+  .remove-button {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .remove-button button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .remove-button button:hover {
+    background-color: #d84315;
+  }
+  

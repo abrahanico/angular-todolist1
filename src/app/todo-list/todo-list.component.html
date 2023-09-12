@@ -1,0 +1,20 @@
+<div class="add-task">
+    <input type="text" placeholder="Skriv in en ny uppgift" [(ngModel)]="newTask">
+    <button (click)="addTask()">Lägg till</button>
+  </div>
+  <div class="todo-container">
+    <div class="column" (dragover)="onDragOver($event)" (drop)="onDrop($event, 'todo')">
+        <h2>Att göra</h2>
+      <div class="task" *ngFor="let task of tasks.todo" (dragstart)="onDragStart($event, task)" draggable="true">{{ task }}</div>
+    
+    </div>
+    <div class="column" (dragover)="onDragOver($event)" (drop)="onDrop($event, 'inProgress')">
+      <h2>Pågående</h2>
+      <div class="task" *ngFor="let task of tasks.inProgress" (dragstart)="onDragStart($event, task)" draggable="true">{{ task }}</div>
+    </div>
+    <div class="column" (dragover)="onDragOver($event)" (drop)="onDrop($event, 'done')">
+      <h2>Avslutade</h2>
+      <div class="task" *ngFor="let task of tasks.done" (dragstart)="onDragStart($event, task)" draggable="true">{{ task }}</div>
+    </div>
+  </div>
+  
